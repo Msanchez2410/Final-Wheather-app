@@ -12,16 +12,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
      <div class="weather-app">   
       <p>06:09- Mon,14 Jun</p>
-      <h2>Barcelona</h2>
+      <h2 id="city"></h2>
       <div class="row">
         <div class="col-3">
-          <h1>16°C | F</h1>
+          <h1 id="temperature"></h1>
+          <span id="cf" class="unitis">°C | <a href="#"> °F</a> </span>
           
         </div>
         <div class="col-3">
@@ -29,7 +31,7 @@
             <li >
                <h3>🌤</h3> 
             </li>
-            <li>Clear</li>
+            <li id="description"></li>
           </ul>
         </div>
         <div class="col-3">
@@ -40,8 +42,8 @@
         </div>  
           <div class="col-3">
             <ul class="factores">
-              <li>Wind: 4 mph</li>
-              <li>Humidity: 49 %</li>
+              <li>Wind:<span id="wind"></span>mph</li>
+              <li>Humidity: <span id="humidity"></span> %</li>
             </ul>
           </div>
         </div>

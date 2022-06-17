@@ -57,7 +57,7 @@ h3 {
   list-style: none;
   position: absolute;
   top: 184px;
-
+  text-transform: capitalize;
   line-height: 10px;
   font-style: normal;
   font-weight: 400;
@@ -82,4 +82,9 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
+}
+#cf {
+  position: absolute;
+  top: 192px;
+  left: 124px;
 }
