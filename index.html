@@ -17,7 +17,18 @@
   </head>
   <body>
     <div class="container">
-     <div class="weather-app">   
+     <div class="weather-app"> 
+      <form id="search-form">
+       <div class="row">
+        <div class="col-4"> 
+          <input type="search" placeholder="City name ..." 
+          class="form-control" id="city-input" autocomplete="off">
+        </div>
+        <div class="col-3">
+          <input type="submit" value="Search" class="btn btn-primary">
+        </div>  
+       </div>  
+      </form>  
       <p id="date"></p>
       <h2 id="city"></h2>
       <div class="row">

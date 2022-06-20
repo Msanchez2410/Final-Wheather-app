@@ -86,3 +86,13 @@ h1 {
   top: 192px;
   left: 124px;
 }
+
+.btn {
+  border-radius: 30.5979px;
+  border: 0.982759px solid #000000;
+  width: 174.41px;
+}
+.form-control {
+  border: 0.982759px solid #000000;
+  border-radius: 60px;
+}
