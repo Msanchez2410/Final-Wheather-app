@@ -18,7 +18,7 @@
   <body>
     <div class="container">
      <div class="weather-app">   
-      <p>06:09- Mon,14 Jun</p>
+      <p id="date"></p>
       <h2 id="city"></h2>
       <div class="row">
         <div class="col-3">
@@ -27,9 +27,13 @@
           
         </div>
         <div class="col-3">
-          <ul class="icon">
+          <ul class="icono">
             <li >
-               <h3>🌤</h3> 
+               <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt="clear"
+                id="icon"
+               />
             </li>
             <li id="description"></li>
           </ul>

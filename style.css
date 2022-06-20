@@ -50,13 +50,11 @@ h1 {
   text-align: center;
   color: #000000;
 }
-h3 {
-  font-size: 50px;
-}
-.icon {
+
+.icono {
   list-style: none;
   position: absolute;
-  top: 184px;
+  top: 142px;
   text-transform: capitalize;
   line-height: 10px;
   font-style: normal;
