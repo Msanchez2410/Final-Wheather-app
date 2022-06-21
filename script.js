@@ -13,6 +13,8 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriprionElement = document.querySelector("#description");
+  let maxElement = document.querySelector("#max");
+  let minElement = document.querySelector("#min");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
@@ -23,6 +25,8 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriprionElement.innerHTML = response.data.weather[0].description;
+  maxElement.innerHTML = Math.round(response.data.main.temp_max);
+  minElement.innerHTML = Math.round(response.data.main.temp_min);
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formateDate(response.data.dt * 1000);
